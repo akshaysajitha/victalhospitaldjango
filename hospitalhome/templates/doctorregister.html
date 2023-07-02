@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Trealop
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>VitalCare Medical Center</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %} " rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'style/register.css' %} "> 
+<style>
+    #listr li {
+      display: inline-table;
+      margin-right: 10px; /* Adjust the spacing between the radio buttons */
+    }
+  </style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="home">VitalCare</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <!--<ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Link Text</a></li>-->
+        <li ><a href="doctorlogin" >Doctor login</a></li>
+        <li class="active"><a href="doctorregister"> Doctor register</a></li>
+       
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!--register-->
+<form action="doctorregesterform" name='dregform' id='dregform'>
+    <div id='reg1'>
+        <div class="wrapper_reg">
+          <h2>Registration  {{erreg}}</h2>
+         
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" id='dname' name='dname' required>
+            </div><br>
+            <div class="input-box">
+                <ul id="listr">
+                    
+                    <li ><input type="radio" id="dgender" name='dgender' value='male'>male</li> 
+                    <li ><input type="radio" id="dgender" name='dgender' value='female'> female</li>
+                    <li ><input type="radio" id="dgender" name='dgender' value='other'>other</li> 
+                    </ul>
+            </div><br>
+            <div class="input-box">
+              <input type="text" placeholder="Specialization"   id='dspecialization' name='dspecialization' required>
+            </div><br>
+            <div class="input-box">
+              <input type="text" placeholder="Education" id='deducation' name='deducation' required>
+            </div>
+            <br>
+            <div class="input-box">
+                <input type="text" placeholder="Experience" id='dexperence' name='dexperence' required>
+              </div>
+              <br>
+              <div class="input-box">
+                <input type="text" placeholder="Address"  id='daddress' name='daddress' required>
+              </div>
+              <br> 
+              <div class="input-box">
+                <input type="text" placeholder="username"  id='dusername' name='dusername' required>
+              </div>
+              <br>
+              <div class="input-box">
+                <input type="password" placeholder="password" id='dpassword' name='dpassword' required>
+              </div>
+              <br>
+            <div class="input-box button">
+              <input type="Submit" value="Register Now">
+            </div><br>
+            <div class="text">
+              <h3>Already have an account? <a href="doctorlogin">Login now</a></h3>
+            </div>
+          </form>
+        </div>
+    </div>
+</form>
+
+
+<!--register end-->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!--footer-->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#"> hospital</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">hospital</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %} "></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %} "></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %} "></script>
+</body>
+</html>
